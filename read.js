@@ -1,7 +1,7 @@
 var MFRC522 = function(){};
 MFRC522.prototype.spawn = require('child_process').spawn;
-MFRC522.prototype.mfrc522py = null
-MFRC522.prototype.callback = null
+MFRC522.prototype.mfrc522py = null;
+MFRC522.prototype.callback = null;
 MFRC522.prototype.dataRegex = new RegExp('"UID": [[0-9,]{4}');
 
 MFRC522.prototype.start = function (callback) {
